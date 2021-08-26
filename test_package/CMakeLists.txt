@@ -16,4 +16,4 @@ set(SOURCES test_package.cpp greeter.h)
 
 add_executable(${PROJECT_NAME} WIN32 ${SOURCES})
 
-target_link_libraries(${PROJECT_NAME} ${CONAN_LIBS})
+target_link_libraries(${PROJECT_NAME} Qt6::Core Qt6::Network Qt6::Concurrent Qt6::Xml)
