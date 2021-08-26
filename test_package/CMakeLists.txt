@@ -7,12 +7,12 @@ project(test_package)
 include(${CMAKE_BINARY_DIR}/conanbuildinfo.cmake)
 conan_basic_setup()
 
-find_package(Qt5 COMPONENTS Core REQUIRED CONFIG)
+find_package(Qt6 COMPONENTS Core REQUIRED CONFIG)
 
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-qt5_wrap_ui(UI_HEADERS
+qt6_wrap_ui(UI_HEADERS
   temp.ui
 )
 
